@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chemist_recyclerview"
+    android:layout_below="@id/recenthead">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:id="@+id/rellay"
+    >
+    <TextView
+        android:id="@+id/sno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/sno"
+        android:padding="3dp"
+        android:id="@+id/invlay"
+        android:weightSum="2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.56"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/invno"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/sno"
+                android:maxLines="2"
+                android:text="Inv No."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/amt"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="Amount"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:maxLines="1"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                android:text="OTP"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/history"
+                android:layout_weight="0.88"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:paddingRight="3dp"
+                android:text="45 minutes ago"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/distributor"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@id/status"
+        android:layout_height="35dp"
+        android:layout_below="@id/invlay"
+        android:layout_marginRight="5dp"
+        android:maxLines="2"
+        android:paddingLeft="3dp"
+        android:background="@drawable/searchbackborder"
+        android:textAllCaps="false"
+        android:layout_toRightOf="@id/sno"
+        android:text="Lucky Pharmaceuticals Pvt. Ltd."
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:layout_below="@id/invlay"
+        android:text="Status"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/status"
+        android:background="@drawable/searchbackborderlightred"/>
+</RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient
+        android:startColor="@color/color_button_dark"
+        android:centerColor="#1d308f"
+        android:endColor="#484abe"
+        ></gradient>
+</shape>

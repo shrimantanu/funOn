@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginHorizontal="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/icon"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/ic_sample_fore"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/icon"
+            android:text="Venue name"
+            android:id="@+id/name"
+
+            /><TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="4.4"
+        android:drawableLeft="@drawable/ic_star_black_24dp"
+        android:id="@+id/rating"
+        android:layout_below="@id/name"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loc"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:text="DLF mall"
+            android:layout_below="@id/rating"
+
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

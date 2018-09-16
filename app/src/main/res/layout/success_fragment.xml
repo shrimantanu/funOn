@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragments.PlaceorderFragments.SuccessPageFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/otp"
+        android:id="@+id/sign_in_layout">
+
+      <pl.droidsonroids.gif.GifImageView
+          android:id="@+id/loading_gif"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_centerVertical="true"
+          android:layout_centerHorizontal="true"
+          android:src="@drawable/loading_gif"/>
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$500"
+            android:textColor="@color/color_button_dark2"
+            android:typeface="serif"
+            android:layout_below="@+id/loading_gif"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="50sp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

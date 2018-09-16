@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources [<!ENTITY default_url "https://testapi.zomeds.com/v1/json/">
+
+    ]>
+<resources>
+    <string name="app_name">funOn</string>
+
+
+    <!--LOGIN Strings -->
+    <string name="sub_title">Transforming Pharmaceutical &amp; medical supply chain</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Login</string>
+    <string name="full_name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="sign_up_with_facebook">Sign up with Facebook</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="create_now">Create now</string>
+    <string name="dont_have_an_account">Don\'t have an account ?</string>
+    <string name="invalid_user">Invalid User</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="otp">Login using OTP</string>
+    <string name="prompt_welcome">Welcome to Zomeds</string>
+    <string name="prompt_instructions">You can login here with your username or mobile number to view the dashboard and view the procurement</string>
+    <string name="url_login">&default_url;auth.vendor.login?vendor=chemist</string>
+    <string name="str_store_user">&default_url;distributor.get.user.store.status</string>
+    <!-- Main Activity Strings-->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <!-- navigation menu strings-->
+    <string name="dashboard">Dashboard</string>
+    <string name="placeordernav">Place Order</string>
+    <string name="ordermanage">Order Management</string>
+    <string name="delivery">Delivery</string>
+    <string name="warehouse">Warehouse</string>
+    <string name="shortage">Shortage</string>
+    <string name="invoicelist">Invoice List</string>
+    <string name="inventory">Inventory</string>
+    <string name="about">About Us</string>
+    <string name="terms">Terms of Service</string>
+    <string name="contact">Contact Us</string>
+    <!-- Book Order Fragment -->
+    <string name="chemistdetails">&default_url;distributor.get.preferred.chemist?</string>
+    <string name="searchaddchemist">&default_url;search.chemist.get?</string>
+    <string name="medicine_url">&default_url;search.drug.get.new?</string>
+
+    <string name="ordersforachemist">&default_url;order.get.all?</string>
+
+    <string name="get_preffered_distributor">&default_url;chemist.get.preferred.distributor?</string>
+
+    <string name="updateorderstatus">&default_url;order.status.update?</string>
+    <string name="orderitemsfetch">&default_url;order.items.get?</string>
+    <string name="update_item_quantity">&default_url;order.item.update?</string>
+    <string name="update_shortage__item_quantity">&default_url;shortage.item.update?</string>
+
+
+    <string name="orderplaced"><placeall>Status: </placeall>Placed</string>
+
+    <string-array name="order_status">
+        <item>Accepted</item>
+        <item>Invoiced</item>
+        <item>Dispatched</item>
+        <item>Completed</item>
+
+    </string-array>
+
+    <string name="shortage_url">&default_url;distributor.shortage.item.get.all?</string>
+    <string name="addshortage_url">&default_url;shortage.item.create?</string>
+    <string name="delete_chemist">&default_url;distributor.preferred.chemist.delete?</string>
+    <string name="add_chemist">&default_url;distributor.preferred.chemist.create?</string>
+
+    <string name="update_shortage">&default_url;distributor.shortage.item.update?</string>
+    <string name="order_item_delete">&default_url;order.item.delete?</string>
+    <string name="order_mngmnt_order_count">&default_url;orders.chemist.get.count?</string>
+    <string name="placeorder">&default_url;distributor.order.place?</string>
+    <string name="FCMToken">&default_url;notification.addDevice?</string>
+    <string name="OTPVerify">&default_url;auth.vendor.verifyOTP</string>
+    <string name="distributor_user_info_url">&default_url;users.distributors.getUserInfo?</string>
+    <string name="url_distributor_update_info">&default_url;users.distributors.updateMasterInfo?</string>
+    <string name="url_reset_password">&default_url;users.distributors.resetPassword?</string>
+
+    <string name="con_password">Confirm Password</string>
+    <string name="verify_mobile_number">Verify Your Number</string>
+    <string name="name">Full Name</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="url_distributors">&default_url;search.distributor.get?</string>
+    <string name="url_request_distributors">&default_url;chemist.preferred.distributor.create?</string>
+
+    <!--Profile Info Urls-->
+    <string name="get_user_info">&default_url;users.chemist.getUserInfo?</string>
+    <string name="chemist_update_info">&default_url;users.chemist.updateMasterInfo?</string>
+    <string name="reset_password_url">&default_url;users.chemist.resetPassword?</string>
+    <string name="url_delete_dl_image">&default_url;users.chemist.delete_dl_image?</string>
+
+    <!--signupurls-->
+    <string name="send_signup_otp">&default_url;users.send.signup.otp?</string>
+    <string name="verify_signup_otp">&default_url;users.verify.signup.otp</string>
+    <string name="url_signUp">&default_url;auth.chemist.signup</string>
+    <string name="signup_upload_token">&default_url;users.chemist.token.fileupload?</string>
+    <string name="signup_dl_image_upload_url">https://chemistdata.s3-ap-south-1.amazonaws.com/</string>
+    <string name="url_check_user_active">&default_url;users.chemist.is.active?</string>
+    <string name="url_request_onboard">&default_url;users.chemist.requestOnboard?</string>
+
+    <string name="invoicelist_url">&default_url;chemist.get.purchase.invoices?</string>
+    <string name="url_inventory">&default_url;distributor.get.all.drugs?</string>
+    <string name="url_inventory_item">&default_url;distributor.drug.options.update?</string>
+    <string name="send_otp">&default_url;auth.vendor.sendOTP</string>
+    <string name="requestotp">Request OTP</string>
+    <string name="getdelivery_otp">&default_url;chemist.get.delivery.otp?</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="countdaily">&default_url;chemist.get.daily.ordercount?</string>
+    <string name="countmonthly">&default_url;chemist.get.monthly.ordercount?</string>
+    <string name="countweekly">&default_url;chemist.get.weekly.ordercount?</string>
+    <string name="totaldaily">&default_url;chemist.get.daily.ordertotal?</string>
+    <string name="totalmonthly">&default_url;chemist.get.monthly.ordertotal?</string>
+    <string name="totalweekly">&default_url;chemist.get.weekly.ordertotal?</string>
+    <string name="orderstatus">&default_url;chemist.get.tilldate.statuscount?</string>
+    <string name="activechemistthirty">&default_url;chemist.get.channel.share.thirty.data?</string>
+    <string name="activechemistsixty">&default_url;chemist.get.channel.share.sixty.data?</string>
+    <string name="activechemistninety">&default_url;chemist.get.channel.share.ninety.data?</string>
+    <string name="update_shortage_item_D">&default_url;shortage.item.update?</string>
+    <string name="delete_fcm_token">&default_url;vendor.deleteDeviceToken?</string>
+    <string name="webregister"></string>
+    <string name="preview_url">&default_url;order.prepare.items?</string>
+    <string name="place_order">&default_url;order.place?</string>
+    <string name="combined_analytics">&default_url;chemist.get.dashboard.combined.analytics?</string>
+    <string name="scheme_url">&default_url;users.get.advertisement.banners?</string>
+    <string name="termcondition">Terms &amp; Conditions</string> <!-- this is not ok -->
+
+
+    <string name="inventorydrug_url">&default_url;shortage.item.get.inventory?</string>
+    <string name="tnc1">These Terms of Use (“Terms”) apply to a users’ (“User/Your”) access to, and use of, the website www.zomeds.com (the “Website”) and the mobile application (the “Application”). The Website and Application are operated by Zomeds India Private Limited, and its subsidiaries, licensees, and affiliated companies (collectively, “Zomeds/We”).</string>
+    <string name="tnc2">As a condition of using the Website and/or Application and the services provided therein (“Services”), you agree to be bound by these Terms. By using or accessing the Website and/or Application and/or the Services, you agree to these Terms, as may be updated from time to time. If you do not agree to these Terms, do not use this Website and/or Application. Because these Terms are a legal contract between you and Zomeds, it is important that you review the Terms carefully before accessing or using the Website and/or Application.These Terms are not intended to alter in any way or limit the terms or conditions of any other agreement that you may have with Zomeds, including without limitation the privacy policy (“Privacy Policy”).</string>
+    <string name="tnc3"> In order to use the Website and/or Application, you are required to provide various information about yourself including your name, email address and other personal information. You agree that any information you provide to Zomeds on the Website and/or Application will always be accurate, correct and up to date. You shall not impersonate someone else or provide account information, an email address or any other information that is not your own.</string>
+    <string name="tnc4"> The Website and Application contains content owned or licensed by Zomeds (“Zomeds Content”). Zomeds owns and retains all rights in the Zomeds Content. You will not remove, alter or conceal any copyright, trademark, service mark or other proprietary rights notices incorporated in or accompanying the Zomeds Content and you will not reproduce, modify, adapt, prepare derivative works based on, perform, display, publish, distribute, transmit, broadcast, sell, license or otherwise exploit the Zomeds Content.</string>
+    <string name="tnc5"> The Zomeds name and logo are trademarks of Zomeds, and may not be copied, imitated or used, in whole or in part, without the prior written permission of Zomeds, except with prior consent. In addition, all custom graphics, button icons and scripts are service marks, trademarks and/or trade dress of Zomeds, and may not be copied, imitated or used, in whole or in part, without prior written permission from Zomeds.</string>
+    <string name="tnc6"> You may use the Website and/or Application for lawful purposes only. You shall not post or transmit through the Website and/or Application any material which violates or infringes the rights of others, or which is threatening, abusive, defamatory, libellous, invasive of privacy or publicity rights, vulgar, obscene, profane or otherwise objectionable, contains injurious formulas, recipes, or instructions, which encourages conduct that would constitute a criminal offence, give rise to civil liability or otherwise violate any law.</string>
+    <string name="tnc7"> You agree not to engage in any of the following prohibited activities: (i) copying, distributing, or disclosing any part of the Website and/or Application in any medium; (ii) transmitting spam, chain letters, or other unsolicited email; (iii) attempting to interfere with, compromise the system integrity or security or decipher any transmissions to or from the servers running the Website and/or Application; (iv) taking any action that imposes, or may impose at our sole discretion an unreasonable or disproportionately large load on our infrastructure; (v) uploading invalid data, viruses, worms, or other software agents through the Website and/or Application; (vi) collecting or harvesting any personally identifiable information, including account names, from the Website and/or Application; (vii) using the Website and/or Application for any commercial purposes without having all necessary rights and licenses to the User Content; (viii) impersonating another person or otherwise misrepresenting your affiliation with a person or entity, conducting fraud, hiding or attempting to hide your identity; (ix) interfering with the proper working of the Website and/or Application; (x) accessing any content on the Website and/or Application through any technology or means other than those capabilities provided by the Website and/or Application; or (xi) bypassing the measures we may use to prevent or restrict access to the Website and/or Application, including without limitation features that prevent or restrict use or copying of any content or enforce limitations on use of the Website and/or Application or the content therein.</string>
+    <string name="tnc8"> You are solely responsible for your conduct and any data, text, information, images, links and other content or materials that you submit, post or display on or via the Website and/or Application (“User Content”). Zomeds shall have no liability for conduct in relation to your use of our Website. Violations of these Terms may result in legal consequences prescribed by all applicable laws of India.</string>
+    <string name="tnc9"> Zomeds has the right (but not the obligation) in its sole discretion to remove any User Content that is stored via the Website and/or Application. Zomeds takes no responsibility and assumes no liability for any User Content that you or any other User or third party creates, stores, shares, posts or sends through the Website and/or Application. You shall be solely responsible for your User Content and the consequences of posting, publishing it, or sharing it and you agree that we are only acting as a passive conduit for your online distribution and publication of your User Content. If your Content violates these Terms, you shall bear legal responsibility for that content.</string>
+    <string name="tnc10"> You agree not to post, store, transmit, create or share any User Content that: (i) may create a risk of harm, loss, physical or mental injury, emotional distress, death, disability,disfigurement, or physical or mental illness to you, to any other person, or to any animal; (ii) may create a risk of any other loss or damage to any person or property; (iii) seeks to harm or exploit children by exposing them to inappropriate content, asking for personally identifiable details or otherwise; (iv) may constitute or contribute to a crime or tort; (v) contains any information or content that we deem to be unlawful, harmful, abusive, racially or ethnically offensive, defamatory, infringing, invasive of personal privacy or publicity rights, harassing, humiliating to other people (publicly or otherwise), libellous, threatening, profane, or otherwise objectionable; (vi) contains any information or content that is illegal (including, without limitation, the disclosure of insider information under securities law or of another party’s trade secrets); or (vii) contains any information or content that you do not have a right to make available under any law or under contractual or fiduciary relationships. You agree that any User Content that you create,store, or share does not and will not violate third-party rights of any kind, including without limitation any Intellectual Property Rights (as defined below) or rights of privacy. Zomeds reserves the right, but is not obligated, to reject and/or remove any User Content that Zomeds believes, in its sole discretion, violates these provisions. For the purposes of these Terms, “Intellectual Property Rights” means all patent rights, copyright rights, mask work rights, moral rights, rights of publicity, trademark, trade dress and service mark rights, goodwill, trade secret rights and other intellectual property rights as may now exist or hereafter come into existence, and all Website therefore and registrations, renewals and extensions thereof, under the laws of any state, country, territory or other jurisdiction.</string>
+    <string name="tnc11"> Your User Content and your use thereof as contemplated by these Terms and the Website and/or Application will not violate any law or infringe any rights of any third party, including but not limited to any Intellectual Property Rights or privacy rights.</string>
+    <string name="tnc12"> To the extent that you use the Website and/or Application for any commercial purpose and your User Content contains any copyrighted material that is not your original work or in which you do not otherwise own the copyright, you have obtained all rights, licenses, consents, and permissions necessary in order to use that copyrighted material in connection with the creation and/or dissemination of that User Content using the Website and/or Application.</string>
+    <string name="tnc13"> Zomeds may exercise the rights to your User Content granted under these Terms without liability for payment of any guild fees, residuals, payments, fees, or royalties payable under any collective bargaining agreement or otherwise.</string>
+    <string name="tnc14"> Zomeds takes no responsibility and assumes no liability for any User Content that you or any other User or third party creates, stores, shares, posts, sends or otherwise makes available through the Website and/or Application, whether directly or indirectly. You shall be solely responsible for your User Content and the consequences of posting, publishing it, or sharing it and you agree that Zomeds is only acting a passive conduit for the distribution and publication of your User Content. If your Content violates these Terms, you shall bear legal responsibility for that content.</string>
+    <string name="tnc15"> You agree that Zomeds is not responsible for, and does not endorse, User Content posted within the Website and/or Application. Zomeds does not have any obligation to pre-screen, monitor, edit, or remove any User Content. If your User Content violates these Terms, you shall be solely responsible for any legal consequences with respect to such User Content.</string>
+    <string name="tnc16"> Zomeds reserves the right to remove any User Content from the Website and/or Application for any reason, without prior notice. User Content removed from the Website and/or Application may continue to be stored by Zomeds, including, without limitation, in order to comply with certain legal obligations, but may not be retrievable without a valid court order. Zomeds will not be liable to you for any modification, suspension, or discontinuation of the Website and/or Application, or the loss of any User Content.</string>
+    <string name="tnc17"> If you share your User Content with Zomeds or link your User Content to Zomeds on a third party service, you expressly grant,and you represent and warrant that you have all rights necessary to grant, to Zomeds a royalty-free, sub licensable, transferable, perpetual, irrevocable, non-exclusive, worldwide license to use, reproduce, modify, publish, list information regarding, edit, translate, distribute, syndicate, publicly perform, publicly display, and make derivative works of all such User Content and your name, voice, and/or likeness as contained in your User Content, in whole or in part, and in any form, media or technology,whether now known or hereafter developed, for use in connection with the Website and/or Application and Zomeds’s (and its successors’ and affiliates’) business, including without imitation for promoting and redistributing part or all of our Website and/or Application (and derivative works thereof) in any media formats and through any media channels.</string>
+    <string name="tnc18"> You understand that by using the Website and/or Application you consent to the collection, use and disclosure of your personally identifiable information and aggregate data as set forth in our Privacy Policy, and to have your personally identifiable information collected, used, processed and transferred to such service providers or affiliates as detailed under the thereunder.</string>
+    <string name="tnc19"> You understand that Zomeds cannot guarantee that unauthorized third parties will never be able to defeat our security measures or use your personal information for improper purposes. You acknowledge that you provide your personal information at your own risk.</string>
+    <string name="tnc20"> The Website and/or Application is a platform through which certain retailers and pharmacies (“Merchants”) advertise products and make available offerings. The Merchant is solely responsible to you for the care and quality of the goods and services it provides. You acknowledge that images on the Website and/or Application are merely indicative, and the actual service may vary.</string>
+    <string name="tnc21"> You acknowledge and agree that the Website and/or Application is merely a platform that facilitates (i) Merchants to post content and information regarding their products and (ii) a User to browse available products and offering. The User understands that all business transactions take place through direct interaction between the User and the Merchant, and Zomeds is not involved in the same.</string>
+    <string name="tnc22"> You agree and acknowledge that all commercial/contractual terms are offered to you by Merchants and agreed to between you and Merchant(s) alone. Zomeds does not exercise any control nor does it determine or advise or in any way involve itself in the offering or acceptance of such commercial/contractual terms between you and the Merchant(s).</string>
+    <string name="tnc23"> You agree and acknowledge that all commercial/contractual terms are offered to you by Merchants and agreed to between you and Merchant(s) alone. Zomeds does not exercise any control nor does it determine or advise or in any way involve itself in the offering or acceptance of such commercial/contractual terms between you and the Merchant(s).</string>
+    <string name="tnc24"> The pricing information and other information provided on the Website and/or Application is solely informational in nature, and Zomeds does not make any warranty or guarantee with respect to the same.</string>
+    <string name="tnc25"> Zomeds does not make any representation or warranty as to the quality or value of the products offered on the Website and/or Application. Zomeds does not implicitly or explicitly support or endorse any Merchants and/or products on the Website and/or Application, and Zomeds accepts no liability for any errors or omissions, whether on behalf of itself or third parties.</string>
+    <string name="tnc26"> Zomeds shall have no obligation with respect to the services performed by the Merchants, or any side effects of such services, and you acknowledge that your sole remedy shall be to proceed against the Merchant in such case.</string>
+    <string name="tnc27"> Zomeds is not responsible for any non-performance or breach of any contract entered into between you and the Merchant(s), and while we may extend our best efforts, at our discretion, to resolve the same, Zomeds shall not and is not required to mediate or resolve any dispute or disagreement between you and the Merchant(s).</string>
+    <string name="tnc28"> Zomeds shall not have any obligations or liabilities in respect of such contract entered into between you and the Merchant(s). Zomeds is not responsible for unsatisfactory or delayed performance of a Merchant’s obligations, or damages or losses suffered as a result. While Zomeds may help the resolution of disputes between a Merchant and you on a best efforts basis, you acknowledge that Zomeds has no obligation with respect to the same.</string>
+    <string name="tnc29"> The content or information posted on the Website and/or Application is posted by other users and may contain errors, and while Zomeds reserves the right to correct/remove the same, it is under no obligation to do so. You acknowledge that you read and act upon this information at your own risk and shall make additional efforts to verify the authenticity of such information.</string>
+    <string name="tnc30"> Any ratings or recommendations assigned to a Merchant is based on an aggregate of reviews received from users of the Website and/or Application, and shall not be construed as an endorsement or advertisement of such Merchant. Zomeds does not independently verify ratings. A rating is only indicative of the level of satisfaction you can expect to find at a particular Merchant’s establishment.</string>
+    <string name="tnc31"> We may, without prior notice, change the Website and/or Application, stop providing the Website and/or Application or features of the Website and/or Application, to you or to Users generally, or create usage limits for the Website and/or Application. We may permanently or temporarily terminate or suspend your access to the Website and/or Application, or delete any User Content without notice and liability for any reason, including if in our sole determination you violate any provision of these Terms,or for no reason. In such event, we shall refund the remaining subscription fees paid by you for the Services (if any), as calculated on a pro-rata basis, subject to adjustment of cancellation fees, as applicable. Upon termination of your account,you continue to be bound by these Terms.</string>
+    <string name="tnc32"> You acknowledge that there will be occasions when the Website and/or Application may be interrupted, including, without limitation, for scheduled maintenance or upgrades, for emergency repairs, or due to failure of telecommunications links and/or equipment.</string>
+    <string name="tnc33"> THE WEBSITE AND/OR APPLICATION ARE PROVIDED ON AN “AS IS”BASIS, AND USE OF THE WEBSITE AND/OR APPLICATION IS AT THE USER’S RISK. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE WEBSITE AND/OR APPLICATION ARE PROVIDED WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM ZOMEDS OR THROUGH THE WEBSITE AND/OR APPLICATION WILL CREATE ANY WARRANTY NOT EXPRESSLY STATED HEREIN. WITHOUT LIMITING THE FOREGOING, ZOMEDS, ITS SUBSIDIARIES, ITS AFFILIATES, AND ITS LICENSORS DO NOT WARRANT THAT THE CONTENT FOUND ON THE WEBSITE AND/OR APPLICATION IS ACCURATE, RELIABLE OR CORRECT; THAT THE WEBSITE AND/OR APPLICATION WILL MEET YOUR REQUIREMENTS; THAT THE WEBSITE AND/OR APPLICATION WILL BE AVAILABLE AT ANY PARTICULAR TIME OR LOCATION, UNINTERRUPTED OR SECURE; THAT ANY DEFECTS OR ERRORS WILL BE CORRECTED; OR THAT THE WEBSITE AND/OR APPLICATION IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. ANY CONTENT DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE WEBSITE AND/OR APPLICATION IS DOWNLOADED AT YOUR OWN RISK AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR MOBILE DEVICE OR LOSS OF DATA THAT RESULTS FROM SUCH DOWNLOAD OR YOUR USE OF THE WEBSITE AND/OR APPLICATION. ZOMEDS DOES NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE WEBSITE AND/OR THE APPLICATION, OR ANY HYPER LINKED WEBSITE OR SERVICE, AND ZOMEDS WILL NOT BE A PARTY TO ORIN ANY WAY MONITOR ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES.</string>
+    <string name="tnc34"> Zomeds may terminate these Terms for any reason at any time. Zomeds reserves the right, in its sole discretion, to restrict, suspend, or terminate your access to and use of the Website and/or Application, with or without prior notice. Otherwise applicable sections of the Terms shall survive termination. In addition to any termination rights, we reserve the right to enforce and prosecute any violations of these Terms.</string>
+    <string name="tnc35"> You shall indemnify and hold us harmless from and against any and all losses, damages, settlements, liabilities, costs, charges, assessments and expenses, as well as third party claims and causes of action, including, without limitation, attorneys’ fees, arising out of any breach by you of any of these Terms, or any use by you of the Website and/or Application. You shall provide us with such assistance, without charge, as we may request in connection with any such defence, including, without limitation, providing us with such information, documents, records and reasonable access to you, as we deem necessary. You shall not settle any third party claim or waive any defence without our prior written consent.</string>
+    <string name="tnc36"> IN NO EVENT WILL ZOMEDS OR ITS AFFILIATES OR ANY PARTY INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE WEBSITE BE LIABLE FOR ANY DIRECT, INCIDENTAL, CONSEQUENTIAL, INDIRECT, SPECIAL, OR PUNITIVE DAMAGES ARISING OUT OF YOUR ACCESS, USE, MISUSE, OR INABILITY TO USE THE WEBSITE AND/OR THE APPLICATION, OR ANY LINKED SITES, OR IN CONNECTION WITH ANY FAILURE OF PERFORMANCE. THESE LIMITATIONS APPLY WHETHER THE ALLEGED LIABILITY IS BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, OR ANY OTHER BASIS, EVEN IF ZOMEDS HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</string>
+    <string name="tnc37"> This Agreement shall be governed by the laws of India, and the courts of Bangalore shall have exclusive jurisdiction with respect to any dispute arising hereunder.</string>
+    <string name="tnc38"> Survival: In the event of termination or expiration of these Terms for any reason, any provisions of these Terms that by their nature should survive termination of these Terms will survive termination of these Terms, unless contrary to the pertinent provisions here instated.</string>
+    <string name="tnc39"> Severability: If any term or provision in these Terms is held to be either illegal or unenforceable, in whole or in part, under any enactment or rule of law, such term or provision or part shall to that extent be deemed not to form part of these Terms, but the validity and enforceability of the remainder of these Terms shall not be affected.</string>
+    <string name="tnc40"> Unenforceability: If any provision of these Terms or any word, phrase, clause, sentence, or other portion thereof should be held to be unenforceable or invalid for any reason, then provided that the essential consideration for entering into these Terms on the part of any Party is not unreasonably impaired, such provision or portion thereof shall be modified or deleted in such manner as to render these Terms as modified legal and enforceable to the maximum extent permitted under applicable laws.</string>
+    <string name="tnc41"> No Waiver: No delay or omission by either Party hereto to exercise any right or power occurring upon any non compliance or default by the other party with respect to any of the terms of these Terms shall impair any such right or power or be construed to be a waiver thereof. The terms and conditions of these Terms may be waived or amended only in writing or mutual agreement of the Parties. A waiver by either of the Parties hereto of any of the covenants, conditions, or agreements to be performed by the other shall not be construed to be a waiver of any succeeding breach thereof or of any covenant, condition, or agreement herein contained (whether or not the provision is similar).</string>
+    <string name="tnc42"> Notices: Any notice required or permitted to be given to Zomeds hereunder shall be in writing and sent or transmitted by (i) registered or certified mail; (ii) hand-delivery; (iii) email; or (iv) internationally recognized courier service, provided its receipt is acknowledged and, dispatched or sent or transmitted to the address specified Zomeds. All notice required to be given under these Terms shall be addressed to: </string>
+    <string name="tnc43"> YOUR SOLE AND EXCLUSIVE RIGHT AND REMEDY IN CASE OF DIS SATISFACTION WITH THE WEBSITE AND/OR THE APPLICATION, THE SERVICES, OR ANY OTHER GRIEVANCE SHALL BE YOUR TERMINATION AND DISCONTINUATION OF ACCESS TO, OR USE OF THE WEBSITE AND/OR THE APPLICATION.</string>
+    <string name="tnc44"> We may change the Terms or modify any features of the Website and/or Application at any time at our sole discretion. The most current version of the Terms can be viewed by clicking on the “Terms and Conditions”. If you continue to use the Website and/or Application after changes are posted you will be deemed to have accepted the change.</string>
+
+
+    <string name="pr1"> This privacy policy (“Privacy Policy”) is subject to the terms of use of the Website and/or Application (both defined below) (“Terms of Use”), and comes into effect from the date and time a user (“User”) accesses the Website or Application, and accepts the Terms of Use laid out therein. By using the Zomeds Website (the “Website”) and/or the Zomeds mobile application (the “Application”), the User consents to collection, storage, and use of the personal information you provide (including any changes thereto as provided by the User) for any of the services that Zomeds offers.</string>
+    <string name="pr2"> Our Privacy Policy sets out how Zomeds (“Zomeds/We/Our”) collects, use, share and protect information in relation to the services provided through the Website (collectively, the “Service”), and your choices about the collection and use of your information.</string>
+    <string name="pr3"> By using our Service you understand and accept this privacy policy along with any amendments or modifications as may be made from time to time (“Privacy Policy”) and thereby expressly consent to our collection, use and disclosure of Personal Information (as defined below) in accordance with this Privacy Policy. If you are not agreeable to this, please do not use this Application and/or Website or Services.</string>
+    <string name="pr4"> In the course of providing the Services to you, Zomeds collects the following information (“Personal Information”):</string>
+    <string name="pr5"> Personal information such as your username, password, e-mail address and phone number when you register for a Zomeds account.</string>
+    <string name="pr6"> We may automatically collect some information about your hardware devices when you access Zomeds. For example, when you utilize our applications, we may collect your internet protocol (“IP”) address and the type of mobile device you use and your geographic location. We also may collect information about your activity on Zomeds, such as information about your account usage, as well as information about how you interact with the Application and/or Website. We may combine this automatically-gathered information with other information, including personal information we have collected about you.</string>
+    <string name="pr7"> We may receive and store certain types of information known as “cookies” when you accesses the Application and/or Website.</string>
+    <string name="pr8"> Communications between you and Zomeds, and you and other users of Zomeds.</string>
+    <string name="pr9"> If you choose to post reviews, comments, or leave feedback for other users, we will collect that information you provide to us. We retain this information as necessary to resolve disputes, provide customer support and troubleshoot problems as permitted by law.</string>
+    <string name="pr10"> The Website may contain links to and from the websites of our partner networks, advertisers and other third parties. If you follow a link to any of these websites, please note that they have their own privacy policies and that we do not accept any responsibility or liability for these policies. We have no control over the privacy practices or the content of any of our business partners, advertisers, sponsors, or other websites to which we provide links. Please check these policies before you submit any personal data to these websites.</string>
+    <string name="pr11"> In order to provide a personalised browsing experience, Zomeds may collect information from the User, and the User agrees that Zomeds may use such information to improve its marketing and promotional efforts, to analyse usage, improve the content of Zomeds, product offerings, and to customise Zomeds’s content, layout, and services, in order to improve Zomeds and better tailor it to meet the needs of the User.</string>
+    <string name="pr12"> To extend this personalized experience, Zomeds may track the IP address of a User’s device and save certain User data on the User’s device in the form of cookies. Zomeds uses this data to deliver web pages to the User upon request, to customize the site to the interests of the User, to measure traffic within the Application and/or Website, and let advertisers and other users know the geographic locations of the User. In the event some portion of the User data provided by a User to Zomeds is personal or sensitive in nature, such data will not be provided to third parties without previous consent of the user concerned. User data of a general nature such as demographics may however be revealed to external parties.</string>
+    <string name="pr13"> We use or may use the data collected through cookies, log file, device identifiers, location data and clear gifs information to: (a) remember information so that you will not have to re-enter it during your visit or the next time you visit the site; (placeall) provide custom, personalized content and information, including advertising; (c) provide and monitor the effectiveness of our Services; (d) monitor aggregate metrics such as total number of visitors, traffic, usage, and demographic patterns on our website and our Services; (e) diagnose or fix technology problems; and (f) otherwise to plan for and enhance our service.</string>
+    <string name="pr14"> We use third-party analytics tools to help us measure traffic and usage trends for the Services. These tools collect information sent by your device or our Services, including the web pages you visit, add-ons, and other information that assists us in improving the Services. We collect and use this analytics information with analytics information from other Users so that it can not reasonably be used to identify any particular individual User.</string>
+    <string name="pr15"> In order to facilitate communications between you, and other Zomeds users.</string>
+    <string name="pr16"> We may share Personal Information (including but not limited to, information from cookies, log files, device identifiers, location data, and usage data) with businesses that are legally part of the same group of companies that Zomeds is part of, or that become part of that group (“Affiliates”). Affiliates may use this information to help provide, understand, and improve the Service (including by providing analytics) and Affiliates’ own services (including by providing you with better and more relevant experiences).</string>
+    <string name="pr17"> We also may share your information as well as information from tools like cookies, log files, and device identifiers and location data, with third-party organizations that help us provide the Services to you. Our service providers will be given access to your information as is necessary to provide the Services under generally accepted terms of confidentiality.</string>
+    <string name="pr18"> Some of the services that are offered through the Website may be provided by third-party providers. We also outsource some of Zomeds’s functions to third-party providers, such as technical and customer support, tracking and reporting functions, quality assurance testing, payment processing functions, and other services. We may share information from or about you with these third-party providers so that they can perform their services or complete your requests.</string>
+    <string name="pr19"> We may share information from or about you (such as your age and gender) and your use of the Website with businesses on Zomeds. You may adjust your settings to increase or decrease the amount of information we share. You can view these settings and find more details about what information may be shared here.</string>
+    <string name="pr20"> We may remove parts of data that can identify you and share anonymized data with other parties. We may also combine your information with other information in a way that it is no longer associated with you and share that aggregated information.</string>
+    <string name="pr21"> Any information or content that you voluntarily disclose for posting to the Application and/or Website becomes available to the public. Once you have shared such information or made it public,the same may be re-shared by others.</string>
+    <string name="pr22"> If you remove information that you posted to the Application and/or Website, copies may remain viewable in cached and archived pages of the Application and/or Website, or if other users or third parties using the Application and/or Website have copied or saved that information.</string>
+    <string name="pr23"> Zomeds may share sensitive personal information of a User with any third party without obtaining the prior consent of the User in the following limited circumstances:</string>
+    <string name="pr24"> When it is requested or required by law or by any court or governmental agency or authority to disclose, for the purpose of verification of identity, or for the prevention, detection,investigation including cyber incidents, or for prosecution and punishment of offences. These disclosures are made in good faith and belief that such disclosure is reasonably necessary for enforcing the Terms of Use, this Privacy Policy, or for complying with the applicable laws and regulations.</string>
+    <string name="pr25"> Zomeds proposes to share such information within its group companies and officers and employees of such group companies forthe purpose of processing personal information on its behalf. Zomeds also ensures that the recipients of such information agree to process such information based on our instructions and in compliance with this Privacy Policy and any other appropriate confidentiality and security measures.</string>
+    <string name="pr26"> We have implemented procedures to help protect the information that you provide to us. However, no method of transmitting or storing electronic data is ever completely secure, and we can not guarantee that such information will never be accessed, used, or released in a manner that is inconsistent with this policy. We expressly disclaim any representation or warranty, whether express or implied, with respect to ensuring, guaranteeing, or otherwise offering any definitive promise of security in connection with your Personal Information. THE USER IS RESPONSIBLE FOR MAINTAINING THE SECRECY OF YOUR ACCOUNT INFORMATION AT ALL TIMES.</string>
+    <string name="pr27"> The User is solely responsible for maintaining confidentiality of the User’s password and User identification. The User shall be solely responsible for all activities and transmission performed by the User through his User identification. Zomeds assumes no responsibility or liability for their improper use of information relating to such usage of credit cards and/or debit cards by the User, whether online or off-line.</string>
+    <string name="pr28"> Zomeds may change or amend this Privacy Policy from time to time to incorporate necessary future changes. Zomeds use of User Data shall be in adherence with consistent with the provisions of the relevant privacy policy under which the information was collected, regardless of new or conflicting provisions in an updated Privacy Policy.</string>
+    <string name="pr29"> 2018 © Zomeds India Pvt. Ltd, All rights reserved. </string>
+
+    <string name="au1"> Growth is attributed to innovation and we at Zomeds are here to transform how pharmaceutical &amp; medical supply chain industry operates. Launching a one of its kind SaaS based platform in India that conjoins the players in the supply chain ecosystem that includes retailers, distributors, doctors, nursing homes and the likes, we are here to bring about the leap in the work algorithm within this industry.</string>
+    <string name="au2"> Offering a supply chain solution using the latest technology to the pharmaceutical industry we provide a B2B, cloud based purchasing solution that assures efficient, timely procurement and distribution of Pharma and medical supplies. Where all things are digital, we bring you the advantage of a one stop shop solution to procuring Pharma products via the virtual front with the click of a button. Providing a holistic analytical platform that is based on the sales and inventory patterns, our users can benefit by chalking out structured marketing plans based on the supply chain management data.</string>
+    <string name="au3"> Access to faster Order Processing and Sales Initiation</string>
+    <string name="au4"> Seamless digital integration within the business</string>
+    <string name="au5"> User-friendly Access</string>
+    <string name="au6"> Business analytics targeted towards enhanced decision making</string>
+    <string name="au7"> Access to a large platform of buyers including Chemist, doctors, hospitals</string>
+    <string name="au8"> Access to products in real-time</string>
+    <string name="au9"> Effective and timely order processing</string>
+    <string name="au10"> Competitive product advantage</string>
+    <string name="au11"> Access to promotional offers &amp; schemes</string>
+    <string name="au12"> Artificial intelligence for better procurement planning</string>
+
+
+    <string name="Notification_read">&default_url;notification.read?id=</string>
+    <string name="Order_history_url">&default_url;order.items.history.get?</string>
+    <string name="Shortage_Item_create">&default_url;shortage.item.create?</string>
+    <string name="shortageItemGetAll">&default_url;shortage.item.get.all?</string>
+    <string name="delete_shortage">&default_url;shortage.item.deleteSingle?</string>
+    <string name="check_item_availibility">&default_url;shortage.item.check.availability?</string>
+
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="horizontal"
+    android:background="@color/color_button_dark"
+    android:id="@+id/ll1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/cart"
+        android:id="@+id/titleshrt"
+        android:textSize="22sp"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingRight="5dp"
+        android:layout_toLeftOf="@id/cart">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:id="@+id/noti"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@color/white"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_notificationsehite"
+            />
+        <Button
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:textSize="7dp"
+            android:textColor="@color/white"
+            android:text="12"
+            android:id="@+id/new_noti"
+            android:background="@drawable/dot_red"
+
+
+
+
+
+            />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/cart"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:tint="@color/white"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_shopping_cart_white_24dp"
+        />
+
+</RelativeLayout>

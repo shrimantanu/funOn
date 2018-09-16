@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.FragmentDistributorMapping">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_button_dark"
+        android:id="@+id/lv"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/card"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/toolbar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="2dp"
+            app:cardCornerRadius="5dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@android:color/transparent"
+                android:hint="Search Distributor...."
+                android:singleLine="true"
+                android:id="@+id/editsearch"
+                android:imeOptions="actionDone"
+                android:textColor="@color/searchbar"
+                android:textColorHint="@color/searchbar"
+                android:paddingLeft="10dp"
+                android:paddingRight="7dp"
+                android:maxLines="1"
+                android:drawableRight="@drawable/ic_search_black_24dp"
+                />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:background="@color/color_button_dark"
+            android:text="Found 0 Distributor in Your Area" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="true"
+        android:layout_marginTop="-5dp"
+        android:layout_below="@+id/lv"
+        android:indeterminateTint="@color/colorAccentt"
+        android:max="100"
+        android:progress="45"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:visibility="visible"
+        android:layout_below="@+id/progressbar"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

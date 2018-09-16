@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_button_dark"
+        android:elevation="3dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backto"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_arrow_back_white_24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Mbrand"
+            android:paddingRight="30dp"
+            android:paddingVertical="8dp"
+            android:textAlignment="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/backto"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/available"
+        android:text="Checking Availability..."
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="6dp"
+        android:textAlignment="center"
+       android:elevation="2dp"
+        android:background="@color/white"
+        android:textSize="14sp"
+        android:textColor="@color/color_button_dark"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/available"
+        android:indeterminateOnly="true"
+        android:indeterminateTint="@color/color_button_dark"
+        android:max="100"
+        android:progress="45"
+        android:visibility="visible" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_dist"
+        android:visibility="gone"
+        android:layout_below="@id/progressbar"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="8dp"
+        android:drawableTop="@drawable/ic_error_red_24dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:text="This item is not available at any of your preferred distributors.
+Please contact them to know more."
+
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/available_distributors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressbar"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/distdetails">
+
+    </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/distdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="7dp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

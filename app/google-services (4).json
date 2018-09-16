@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "767490783653",
+    "firebase_url": "https://funon-ca388.firebaseio.com",
+    "project_id": "funon-ca388",
+    "storage_bucket": "funon-ca388.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767490783653:android:48fecb7aa060546a",
+        "android_client_info": {
+          "package_name": "com.funon.com.funon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767490783653-lomlno7mve5p2q2ufdtj1k9gb3g7bo6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.funon.com.funon",
+            "certificate_hash": "a4520cc56b9597de118ae9858c9b587d528d71f0"
+          }
+        },
+        {
+          "client_id": "767490783653-s61fb60i1s63tps3rk0qim9uqf5pqua4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrWaKczwFjROAOgjQZu3QBhIbn1b9CSpA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767490783653-s61fb60i1s63tps3rk0qim9uqf5pqua4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

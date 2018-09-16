@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chemist_recyclerview"
+    android:layout_margin="5dp"
+    app:contentPadding="6dp"
+    android:foreground="?selectableItemBackground"
+    android:clickable="false"
+    android:elevation="2dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+                android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/med_icon"
+            android:maxWidth="24dp"
+            android:maxHeight="24dp"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/medicinename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/med_icon"
+
+
+            android:text="Medicine Name"
+            android:textColor="@color/color_button_dark"
+
+            android:layout_toLeftOf="@id/stock"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="company"
+            android:layout_toRightOf="@id/med_icon"
+            android:layout_below="@id/medicinename"
+            android:textSize="12sp"
+            android:id="@+id/company"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_below="@id/company"
+            android:id="@+id/form"
+            android:layout_toRightOf="@id/med_icon"
+            android:visibility="gone"
+            />
+
+
+
+
+        <ImageView
+            android:id="@+id/stockstatus"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:maxLines="1"
+
+            tools:ignore="RtlCompat" />
+       <TextView
+            android:id="@+id/stock"
+           android:layout_toLeftOf="@id/stockstatus"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="8dp"
+           android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="(Stock:2)"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.6"
+        android:weightSum="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Quantity:"
+                android:textStyle="bold"
+                android:textColor="@color/color_button_dark"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.4">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/minus"
+        android:src="@drawable/ic_remove_black_24dp"
+        android:background="@drawable/circle_back"
+        />
+    <EditText
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/qty"
+        android:textSize="12dp"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plus"
+        android:src="@drawable/ic_add_black_10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/circle_back"
+        />
+        </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MRP: "
+                android:textStyle="bold"
+                android:id="@+id/tvmrp"
+                android:textColor="@color/color_button_dark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvmrp"
+                android:text="price"
+                android:id="@+id/mrp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pkglayout"
+                android:layout_below="@id/tvmrp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pkg: "
+                    android:textColor="@color/color_button_dark"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 + 5 "
+                    android:hint="-1"
+                    android:id="@+id/pkg"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/ptrschemerl"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PTR: "
+                android:textStyle="bold"
+                android:id="@+id/ptrlabel"
+                android:textColor="@color/color_button_dark"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ptrlabel"
+                android:text="price"
+                android:id="@+id/ptr"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/schemelayout"
+                android:layout_below="@id/ptrlabel"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_button_dark"
+                    android:text="Scheme: "
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/scheme"
+                    />
+            </LinearLayout>
+            <ProgressBar
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:visibility="gone"
+                android:id="@+id/processing"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:id="@+id/successicon"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/ic_check_circle_black_24dp"
+                />
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/schemelayout"
+                android:foregroundGravity="bottom|center_horizontal"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/ic_add_shopping_cart_blue_24dp"
+                android:padding="4dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_alignParentRight="true"
+                 />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

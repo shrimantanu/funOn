@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shortage"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    app:contentPadding="0dp"
+    android:foreground="?selectableItemBackground"
+    android:clickable="false"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/medicinename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:text="Medicine Name"
+                android:layout_toLeftOf="@id/ptr"
+                android:textColor="@color/color_button_dark"
+
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="company"
+                android:textSize="12sp"
+                android:layout_toLeftOf="@id/mrp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/medicinename"
+                android:id="@+id/company"
+                />
+            <TextView
+                android:id="@+id/ptr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="price" />
+            <TextView
+                android:id="@+id/mrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ptr"
+                android:layout_alignParentRight="true"
+                android:textSize="10dp"
+                android:text="price"
+                android:textColor="#5c5a5a"
+
+                />
+
+            <!--<Button
+                android:id="@+id/btn_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:layout_marginHorizontal="5dp"
+                android:drawableRight="@drawable/ic_delete_white_24dp"
+                />-->
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/qtylayout"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:id="@+id/qtytv"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_button_dark"
+                        android:text="Quantity: "
+                        />
+                    <ImageButton
+                        android:id="@+id/minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/qtytv"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_remove_circle_outline_black_24dp" />
+                    <EditText
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="0dp"
+                        android:layout_toRightOf="@id/minus"
+                        android:paddingLeft="4dp"
+                        android:text="1"
+                        android:inputType="number"
+                        android:id="@+id/qty"
+                        android:textSize="12sp"
+                        />
+<ProgressBar
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_toLeftOf="@id/plus"
+    android:layout_centerVertical="true"
+    android:progressTint="@color/colorP"
+    android:indeterminateTint="@color/colorP"
+    android:id="@+id/progbar"
+    />
+                    <ImageButton
+                        android:id="@+id/plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_toRightOf="@id/qty"
+                        android:layout_alignParentRight="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_add_circle_blue_24dp" />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pkglayout"
+                    android:layout_below="@id/qtylayout"
+                    android:layout_marginTop="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_button_dark"
+                        android:text="Pkg: "
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25 + 5 "
+                        android:id="@+id/pkg"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stock: "
+                android:id="@+id/storetv"
+                android:textStyle="bold"
+                android:textColor="@color/color_button_dark" />
+
+                <TextView
+                    android:id="@+id/stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/storetv"
+                    android:background="#eddf80"
+                    android:maxLines="1"
+                    android:text="2"
+
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@id/stock"
+                    android:id="@+id/schemelayout"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_button_dark"
+                        android:text="Scheme: "
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25 + 5 "
+                        android:id="@+id/scheme"
+                        />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_del"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_marginHorizontal="5dp"
+                    android:drawableRight="@drawable/ic_delete_black_24dp"
+                    />
+            </RelativeLayout>
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MRP: "
+                    android:id="@+id/mrptv"
+                    android:textColor="@color/button_color" />
+
+                <TextView
+                    android:id="@+id/mrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/mrptv"
+                    android:text="price" />-->
+<!--
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pkg: "
+                        android:textColor="@color/button_color" />
+
+                    <TextView
+                        android:id="@+id/pkg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="weight" />
+                </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2.2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PTR: "
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/ptrtv"
+                    android:textColor="@color/button_color" />
+
+                <TextView
+                    android:id="@+id/ptr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ptrtv"
+                    android:text="price" />
+                <TextView
+                    android:id="@+id/stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ptrtv"
+                    android:background="#eddf80"
+                    android:maxLines="1"
+                    android:text="(Stock:2)"
+                    android:layout_marginTop="10dp"
+                    />
+            </RelativeLayout>
+-->
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/distributor"
+            android:text="Select Distributor"
+            android:paddingVertical="8dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@color/selected"
+            />
+        <!--<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="3">
+
+
+            &lt;!&ndash;<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.1"
+        ></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.1"
+        ></LinearLayout>
+&ndash;&gt;
+        </RelativeLayout>-->
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="true"
+        android:indeterminateTint="@color/colorAccentt"
+        android:max="100"
+        android:progress="45"
+        android:layout_marginTop="-5dp"
+        android:visibility="gone" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2.5"
+        android:id="@+id/btn"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        >
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn"
+            android:id="@+id/grp"
+            android:layout_weight="2.5"
+            android:orientation="horizontal"
+
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bar Graph"
+                android:id="@+id/bar"
+                android:padding="10dp"
+                android:checked="true"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:buttonTint="@color/color_button_dark3"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Line Graph"
+                android:padding="10dp"
+                android:id="@+id/line"
+                android:layout_weight="2"
+                android:buttonTint="@color/color_button_dark3"
+                />
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchbackborder"
+        android:text="Daily"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/daily"
+        />
+    <Button
+        android:layout_below="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchbackborder"
+        android:text="Weekly"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/daily"
+        android:id="@+id/weekly"
+        />
+    <Button
+        android:layout_below="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchbackborder"
+        android:text="Monthly"
+        android:textAllCaps="false"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/weekly"
+        android:textColor="@color/black"
+        android:id="@+id/monthly"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount in ₹"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_below="@id/daily"
+        android:id="@+id/vertical"
+        />
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/graph"
+        android:layout_below="@id/vertical"
+        android:layout_marginRight="10dp"
+        />
+
+
+
+</RelativeLayout>

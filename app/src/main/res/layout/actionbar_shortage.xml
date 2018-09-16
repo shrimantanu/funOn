@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shortage"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:layout_toLeftOf="@id/search"
+
+        />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/history"
+android:layout_centerVertical="true"
+
+        android:paddingHorizontal="8dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_history_white_24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        />
+    <android.support.v7.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+android:layout_centerVertical="true"
+        android:paddingHorizontal="8dp"
+        android:layout_toLeftOf="@id/history"
+        android:src="@drawable/ic_search_white_24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        />
+
+</RelativeLayout>

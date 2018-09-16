@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chemist_recyclerview"
+    app:contentPadding="0dp"
+    android:elevation="2dp"
+    tools:context="com.zomeds.buyerapp.Activities.NavigationActivity">
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9">
+
+            <TextView
+                android:id="@+id/sno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="#"
+                android:textColor="#000000"
+                android:textSize="13sp"
+
+                />
+
+            <TextView
+                android:id="@+id/medname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/sno"
+                android:maxLines="2"
+                android:text="Medicine"
+                android:textColor="@color/color_button_dark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/cname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/medname"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/sno"
+                android:text="Company"
+                android:textColor="#70707c"
+                android:textSize="12sp"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5">
+                <TextView
+                    android:id="@+id/qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Qty"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+
+                    />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2">
+                <TextView
+                    android:id="@+id/ptr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PTR"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+                </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    >
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+
+
+</RelativeLayout>
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ll2"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+            <TextView
+                android:id="@+id/scheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll2"
+                android:layout_marginTop="5dp"
+                android:text="scheme"
+                android:paddingRight="7dp"
+                android:paddingLeft="7dp"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:background="@drawable/btnbackbluedarklessradius"
+                />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+            <TextView
+                android:id="@+id/margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll1"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/btnbackgreenlessradius"
+                android:text="10% margin"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:textColor="#ffffff"
+                android:textSize="10sp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
